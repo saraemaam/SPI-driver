@@ -1,0 +1,20 @@
+18:01:28 **** Incremental Build of configuration Debug for project SPI_driver_test_MCU1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SPI_driver_test_MCU1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2244 bytes (6.8% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+18:01:28 Build Finished. 0 errors, 0 warnings. (took 155ms)
+

@@ -1,0 +1,32 @@
+/****************************************************************
+ *
+ * Module: SPI
+ *
+ * File Name: mcu1.c
+ *
+ * Description: source file for SPI driver test functionality
+ *
+ * Author: Sarah
+ ******************************************************************/
+#include"spi.h"
+#include"gpio.h"
+#include<avr/io.h>
+
+int main(void)
+{
+
+	GPIO_setupPinDirection(PORTA_ID,PIN0_ID,PIN_INPUT);
+
+
+
+	while(1){
+
+		while( BIT_IS_CLEAR(PINA,PIN0_ID));
+
+
+
+	}
+
+
+
+}

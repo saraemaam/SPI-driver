@@ -1,0 +1,102 @@
+/****************************************************************
+ *
+ * Module: SPI
+ *
+ * File Name: spi.c
+ *
+ * Description: Source File for AVR SPI driver
+ *
+ * Author: Sarah
+ ******************************************************************/
+#include"spi.h"
+#include"gpio.h"
+#include"common_macros.h"
+
+/*
+ * Description:
+ *  Initialize the SPI device as Master.
+ */
+void SPI_initMaster(void){
+
+	/******** Configure SPI Master Pins *********
+	 * SS(PB4)   --> Output
+	 * MOSI(PB5) --> Output
+	 * MISO(PB6) --> Input
+	 * SCK(PB7) --> Output
+	 ********************************************/
+
+	GPIO_setupPinDirection(SPI_CONNECTION_PORT,SPI_SLAVE_SELECT_PIN,PIN_OUTPUT);
+	GPIO_setupPinDirection(SPI_CONNECTION_PORT,SPI_MOSI_PIN,PIN_OUTPUT);
+	GPIO_setupPinDirection(SPI_CONNECTION_PORT,SPI_MISO_PIN,PIN_INPUT);
+	GPIO_setupPinDirection(SPI_CONNECTION_PORT,SPI_SCK_PIN,PIN_OUTPUT);
+
+
+
+
+}
+
+/*
+ * Description :
+ * Initialize the SPI device as Slave.
+ */
+void SPI_initSlave(void){
+
+
+
+	/******** Configure SPI Slave Pins *********
+	 * SS(PB4)   --> Input
+	 * MOSI(PB5) --> Input
+	 * MISO(PB6) --> Output
+	 * SCK(PB7) --> Input
+	 ********************************************/
+
+
+
+
+}
+
+/*
+ * Description:
+ * Send the required data through SPI to the other SPI device.
+ * at the same time data will be received from the other device.
+ */
+
+uint8 SPI_sendReceiveByte(uint8 data){
+
+
+
+
+
+
+}
+
+/*
+ * Description:
+ * Send the required string through SPI to the other SPI device.
+ */
+void SPI_sendString(const uint8 *Str){
+
+
+
+
+}
+
+/*
+ * Description:
+ * Receive the required string until
+ * the '#' symbol through SPI from the other SPI device.
+ */
+void SPI_receiveString(uint8 *Str){
+
+
+	while(str[i] !='#')
+	{
+
+
+	}
+
+
+
+
+
+}

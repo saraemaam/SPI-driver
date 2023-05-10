@@ -1,0 +1,116 @@
+18:01:22 **** Build of configuration Debug for project SPI_driver_test_MCU1 ****
+make all 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../mcu1.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"mcu1.d" -MT"mcu1.o" -c -o "mcu1.o" "../mcu1.c"
+Finished building: ../mcu1.c
+ 
+Building file: ../spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"spi.d" -MT"spi.o" -c -o "spi.o" "../spi.c"
+Finished building: ../spi.c
+ 
+Building target: SPI_driver_test_MCU1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SPI_driver_test_MCU1.map -mmcu=atmega32 -o "SPI_driver_test_MCU1.elf"  ./gpio.o ./mcu1.o ./spi.o   
+Finished building target: SPI_driver_test_MCU1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SPI_driver_test_MCU1.elf  >"SPI_driver_test_MCU1.lss"
+Finished building: SPI_driver_test_MCU1.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SPI_driver_test_MCU1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2244 bytes (6.8% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:01:24 **** Build of configuration Debug for project SPI_driver_test_MCU2 ****
+make all 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../mcu2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"mcu2.d" -MT"mcu2.o" -c -o "mcu2.o" "../mcu2.c"
+Finished building: ../mcu2.c
+ 
+Building file: ../spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"spi.d" -MT"spi.o" -c -o "spi.o" "../spi.c"
+Finished building: ../spi.c
+ 
+Building target: SPI_driver_test_MCU2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SPI_driver_test_MCU2.map -mmcu=atmega32 -o "SPI_driver_test_MCU2.elf"  ./gpio.o ./mcu2.o ./spi.o   
+Finished building target: SPI_driver_test_MCU2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SPI_driver_test_MCU2.elf  >"SPI_driver_test_MCU2.lss"
+Finished building: SPI_driver_test_MCU2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SPI_driver_test_MCU2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2266 bytes (6.9% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:01:28 **** Incremental Build of configuration Debug for project SPI_driver_test_MCU1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SPI_driver_test_MCU1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2244 bytes (6.8% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:01:28 **** Incremental Build of configuration Debug for project SPI_driver_test_MCU2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SPI_driver_test_MCU2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2266 bytes (6.9% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 

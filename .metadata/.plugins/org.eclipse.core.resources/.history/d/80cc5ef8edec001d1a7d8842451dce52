@@ -1,0 +1,12 @@
+/****************************************************************
+ *
+ * Module: SPI
+ *
+ * File Name: mcu1.c
+ *
+ * Description: source file for SPI driver test functionality
+ *
+ * Author: Sarah
+ ******************************************************************/
+#include"spi.h"
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;SPI_driver_test&apos; to &apos;SPI_driver_test_MCU2&apos;" description="Rename resource &apos;SPI_driver_test&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/SPI_driver_test" name="SPI_driver_test_MCU2" stamp="1683469229801" updateReferences="true"/>
+</session>
